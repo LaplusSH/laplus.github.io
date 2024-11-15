@@ -1,6 +1,5 @@
 document.getElementById('registerForm').addEventListener('submit', async function(event) {
     event.preventDefault();
-
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirmPassword').value;
@@ -10,12 +9,11 @@ document.getElementById('registerForm').addEventListener('submit', async functio
         return;
     }
 
-    const response = await fetch('https://your-app.vercel.app/register', {
+    const response = await fetch('https://your-api-url.com/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password })
     });
-
     const data = await response.json();
     if (data.success) {
         alert('회원가입 성공');
