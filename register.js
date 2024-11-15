@@ -9,7 +9,7 @@ document.getElementById('registerForm').addEventListener('submit', async functio
         return;
     }
 
-    const response = await fetch('https://your-api-url.com/register', {
+    const response = await fetch('laplus-github-io.vercel.app', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password })
