@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/growith-db
+    url: jdbc:mysql://https://laplussh.github.io/laplus.github.io/growith-db
     username: root
     password: 12341234
   jpa:
